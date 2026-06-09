@@ -1,11 +1,12 @@
 ---
+const base = import.meta.env.BASE_URL.replace(/\/$/, '') + '/';
 const images = [
-  { src: '/images/1.webp', alt: 'Captura de pantalla 1' },
-  { src: '/images/2.webp', alt: 'Captura de pantalla 2' },
-  { src: '/images/3.webp', alt: 'Captura de pantalla 3' },
-  { src: '/images/4.webp', alt: 'Captura de pantalla 4' },
-  { src: '/images/5.webp', alt: 'Captura de pantalla 5' },
-  { src: '/images/6.webp', alt: 'Captura de pantalla 6' },
+  { src: `${base}images/1.webp`, alt: 'Captura de pantalla 1' },
+  { src: `${base}images/2.webp`, alt: 'Captura de pantalla 2' },
+  { src: `${base}images/3.webp`, alt: 'Captura de pantalla 3' },
+  { src: `${base}images/4.webp`, alt: 'Captura de pantalla 4' },
+  { src: `${base}images/5.webp`, alt: 'Captura de pantalla 5' },
+  { src: `${base}images/6.webp`, alt: 'Captura de pantalla 6' },
 ];
 ---
 
