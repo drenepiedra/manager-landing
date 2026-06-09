@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="640" viewBox="0 0 360 640">
+  <rect width="360" height="640" fill="#0f172a"/>
+  <rect x="20" y="40" width="320" height="60" rx="12" fill="#1e293b"/>
+  <text x="40" y="76" fill="#94a3b8" font-family="sans-serif" font-size="16">Partidos en Vivo</text>
+  <rect x="20" y="120" width="320" height="100" rx="12" fill="#1e293b"/>
+  <text x="40" y="150" fill="#ef4444" font-family="sans-serif" font-size="10" font-weight="bold">EN VIVO</text>
+  <text x="40" y="175" fill="#e2e8f0" font-family="sans-serif" font-size="16">Real Madrid 2 - 1 Barcelona</text>
+  <text x="40" y="200" fill="#94a3b8" font-family="sans-serif" font-size="12">Min 67'</text>
+  <rect x="20" y="235" width="320" height="100" rx="12" fill="#1e293b"/>
+  <text x="40" y="265" fill="#ef4444" font-family="sans-serif" font-size="10" font-weight="bold">EN VIVO</text>
+  <text x="40" y="290" fill="#e2e8f0" font-family="sans-serif" font-size="16">Man City 0 - 0 Liverpool</text>
+  <text x="40" y="315" fill="#94a3b8" font-family="sans-serif" font-size="12">Min 34'</text>
+  <rect x="20" y="350" width="320" height="100" rx="12" fill="#1e293b"/>
+  <text x="40" y="380" fill="#ef4444" font-family="sans-serif" font-size="10" font-weight="bold">EN VIVO</text>
+  <text x="40" y="405" fill="#e2e8f0" font-family="sans-serif" font-size="16">PSG 3 - 2 Bayern</text>
+  <text x="40" y="430" fill="#94a3b8" font-family="sans-serif" font-size="12">Min 89'</text>
+  <rect x="20" y="465" width="320" height="100" rx="12" fill="#1e293b"/>
+  <text x="40" y="495" fill="#f59e0b" font-family="sans-serif" font-size="10" font-weight="bold">PRÓXIMO</text>
+  <text x="40" y="520" fill="#e2e8f0" font-family="sans-serif" font-size="16">Juventus vs Inter</text>
+  <text x="40" y="545" fill="#94a3b8" font-family="sans-serif" font-size="12">21:00</text>
+</svg>

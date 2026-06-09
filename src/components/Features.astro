@@ -1,0 +1,82 @@
+---
+const features = [
+  {
+    icon: `<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>`,
+    title: 'Estadísticas en Tiempo Real',
+    description: 'Accede a estadísticas actualizadas de todos los partidos y equipos para hacer predicciones informadas.',
+  },
+  {
+    icon: `<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>`,
+    title: 'Predicciones Inteligentes',
+    description: 'Nuestro algoritmo analiza miles de datos para ofrecerte predicciones precisas y ayudarte a tomar mejores decisiones.',
+  },
+  {
+    icon: `<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg>`,
+    title: 'Compite con Amigos',
+    description: 'Crea ligas privadas, compite con tus amigos y demuestra quién es el mejor predictor del grupo.',
+  },
+  {
+    icon: `<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>`,
+    title: 'Recompensas y Logros',
+    description: 'Gana puntos por cada predicción acertada, desbloquea logros y sube en el ranking global.',
+  },
+  {
+    icon: `<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/></svg>`,
+    title: 'Notificaciones Instantáneas',
+    description: 'Recibe alertas de partidos próximos, resultados en vivo y recordatorios de tus predicciones pendientes.',
+  },
+  {
+    icon: `<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>`,
+    title: 'Seguro y Confiable',
+    description: 'Tus datos están protegidos con encriptación de nivel bancario. Juega con total tranquilidad.',
+  },
+];
+---
+
+<section id="features" class="relative py-24">
+  <div class="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-px border-t border-dashed border-dark-700"></div>
+  <div class="absolute top-16 left-0 w-48 h-px border-t border-dashed border-dark-800 hidden lg:block"></div>
+  <div class="absolute top-16 right-0 w-48 h-px border-t border-dashed border-dark-800 hidden lg:block"></div>
+  <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-3/4 h-px border-t border-dashed border-dark-700"></div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <div class="inline-block mb-4">
+        <span class="px-3 py-1 text-xs font-medium text-primary-400 border border-dashed border-primary-500/30 rounded-full">Funcionalidades</span>
+      </div>
+      <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">
+        ¿Por qué elegir nuestra app?
+      </h2>
+      <p class="text-lg text-dark-400 max-w-2xl mx-auto">
+        Diseñada para los verdaderos amantes del deporte. Todas las herramientas que necesitas para ser el mejor predictor.
+      </p>
+    </div>
+    
+    <div class="relative">
+      <div class="absolute top-0 left-1/2 -translate-x-1/2 w-px h-full border-l border-dashed border-dark-800 hidden lg:block"></div>
+      <div class="absolute top-1/2 left-0 w-full h-px border-t border-dashed border-dark-800 hidden lg:block"></div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {features.map((feature) => (
+          <div class="group relative p-8 rounded-2xl bg-dark-900/50 border border-dashed border-dark-700 hover:border-primary-500/30 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary-500/5">
+          <div class="w-12 h-12 rounded-xl bg-primary-500/10 text-primary-400 flex items-center justify-center mb-6 group-hover:bg-primary-500/20 transition-colors" set:html={feature.icon} />
+          <h3 class="text-xl font-semibold text-white mb-3">{feature.title}</h3>
+          <p class="text-dark-400 leading-relaxed">{feature.description}</p>
+        </div>
+      ))}
+      </div>
+    </div>
+    
+    <div class="mt-20 text-center">
+      <div class="inline-flex flex-col sm:flex-row items-center gap-4 p-8 rounded-2xl bg-gradient-to-r from-primary-600/10 to-primary-800/10 border border-dashed border-primary-500/30">
+        <div class="text-left">
+          <h3 class="text-2xl font-bold text-white mb-1">¿Listo para empezar?</h3>
+          <p class="text-dark-300">Descarga la app y comienza a predecir hoy mismo.</p>
+        </div>
+        <a href="#" class="px-8 py-4 bg-primary-600 hover:bg-primary-700 text-white font-semibold rounded-xl transition-all duration-200 shadow-lg shadow-primary-500/25 hover:shadow-primary-500/40 whitespace-nowrap">
+          Descargar App
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="640" viewBox="0 0 360 640">
+  <rect width="360" height="640" fill="#0f172a"/>
+  <rect x="20" y="40" width="320" height="60" rx="12" fill="#1e293b"/>
+  <text x="40" y="76" fill="#94a3b8" font-family="sans-serif" font-size="16">Liga Privada</text>
+  <rect x="20" y="120" width="320" height="80" rx="12" fill="#1e3a8a" opacity="0.3"/>
+  <text x="40" y="150" fill="#60a5fa" font-family="sans-serif" font-size="14" font-weight="bold">Los Cracks del Fútbol</text>
+  <text x="40" y="175" fill="#94a3b8" font-family="sans-serif" font-size="12">12 participantes</text>
+  <rect x="20" y="220" width="320" height="50" rx="8" fill="#1e293b"/>
+  <text x="40" y="250" fill="#f59e0b" font-family="sans-serif" font-size="14" font-weight="bold">1. Carlos M.</text>
+  <text x="280" y="250" fill="#34d399" font-family="sans-serif" font-size="14">245 pts</text>
+  <rect x="20" y="280" width="320" height="50" rx="8" fill="#1e293b"/>
+  <text x="40" y="310" fill="#94a3b8" font-family="sans-serif" font-size="14" font-weight="bold">2. María L.</text>
+  <text x="280" y="310" fill="#34d399" font-family="sans-serif" font-size="14">230 pts</text>
+  <rect x="20" y="340" width="320" height="50" rx="8" fill="#1e293b"/>
+  <text x="40" y="370" fill="#94a3b8" font-family="sans-serif" font-size="14" font-weight="bold">3. Pedro R.</text>
+  <text x="280" y="370" fill="#34d399" font-family="sans-serif" font-size="14">218 pts</text>
+  <rect x="20" y="400" width="320" height="50" rx="8" fill="#2563eb" opacity="0.2"/>
+  <text x="40" y="430" fill="#60a5fa" font-family="sans-serif" font-size="14" font-weight="bold">12. Tú</text>
+  <text x="280" y="430" fill="#60a5fa" font-family="sans-serif" font-size="14">156 pts</text>
+  <rect x="20" y="480" width="320" height="60" rx="12" fill="#2563eb"/>
+  <text x="110" y="516" fill="white" font-family="sans-serif" font-size="14" font-weight="bold">Invitar Amigos</text>
+  <rect x="20" y="560" width="320" height="60" rx="12" fill="#1e293b"/>
+  <text x="100" y="596" fill="#94a3b8" font-family="sans-serif" font-size="14">Crear Nueva Liga</text>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="640" viewBox="0 0 360 640">
+  <rect width="360" height="640" fill="#0f172a"/>
+  <rect x="20" y="40" width="320" height="60" rx="12" fill="#1e293b"/>
+  <text x="40" y="76" fill="#94a3b8" font-family="sans-serif" font-size="16">Estadísticas</text>
+  <rect x="20" y="120" width="320" height="200" rx="12" fill="#1e293b"/>
+  <text x="40" y="150" fill="#e2e8f0" font-family="sans-serif" font-size="14" font-weight="bold">Rendimiento Mensual</text>
+  <rect x="50" y="250" width="30" height="40" rx="4" fill="#2563eb"/>
+  <rect x="95" y="220" width="30" height="70" rx="4" fill="#2563eb"/>
+  <rect x="140" y="200" width="30" height="90" rx="4" fill="#2563eb"/>
+  <rect x="185" y="230" width="30" height="60" rx="4" fill="#2563eb"/>
+  <rect x="230" y="190" width="30" height="100" rx="4" fill="#34d399"/>
+  <rect x="275" y="210" width="30" height="80" rx="4" fill="#2563eb"/>
+  <rect x="20" y="340" width="155" height="80" rx="12" fill="#1e293b"/>
+  <text x="40" y="370" fill="#94a3b8" font-family="sans-serif" font-size="12">Racha Actual</text>
+  <text x="40" y="395" fill="#34d399" font-family="sans-serif" font-size="22" font-weight="bold">5 victorias</text>
+  <rect x="185" y="340" width="155" height="80" rx="12" fill="#1e293b"/>
+  <text x="205" y="370" fill="#94a3b8" font-family="sans-serif" font-size="12">Mejor Liga</text>
+  <text x="205" y="395" fill="#f59e0b" font-family="sans-serif" font-size="22" font-weight="bold">La Liga</text>
+  <rect x="20" y="440" width="320" height="80" rx="12" fill="#1e293b"/>
+  <text x="40" y="470" fill="#94a3b8" font-family="sans-serif" font-size="12">Precisión por Liga</text>
+  <rect x="40" y="485" width="200" height="8" rx="4" fill="#334155"/>
+  <rect x="40" y="485" width="150" height="8" rx="4" fill="#2563eb"/>
+  <rect x="40" y="500" width="200" height="8" rx="4" fill="#334155"/>
+  <rect x="40" y="500" width="170" height="8" rx="4" fill="#34d399"/>
+</svg>
