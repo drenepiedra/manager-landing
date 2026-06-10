@@ -7,7 +7,13 @@ const images = [
   { src: `${base}images/4.png`, alt: 'Captura de pantalla 4' },
   { src: `${base}images/5.png`, alt: 'Captura de pantalla 5' },
   { src: `${base}images/6.png`, alt: 'Captura de pantalla 6' },
+  { src: `${base}images/7.png`, alt: 'Captura de pantalla 7' },
+  { src: `${base}images/8.png`, alt: 'Captura de pantalla 8' },
+  { src: `${base}images/9.png`, alt: 'Captura de pantalla 9' },
 ];
+const visibleCount = 6;
+const visibleImages = images.slice(0, visibleCount);
+const hiddenImages = images.slice(visibleCount);
 ---
 
 <section id="gallery" class="relative py-24 bg-dark-900/50">
@@ -33,7 +39,7 @@ const images = [
       <div class="absolute -top-1.5 right-8 w-3 h-3 bg-dark-950 border border-dashed border-primary-500/40 rounded-full"></div>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {images.map((image) => (
+        {visibleImages.map((image) => (
           <div class="group relative aspect-[9/16] rounded-2xl overflow-hidden bg-dark-800 border border-dashed border-dark-600 hover:border-primary-500/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary-500/10">
           <img
             src={image.src}
@@ -43,11 +49,44 @@ const images = [
           <div class="absolute inset-0 bg-gradient-to-t from-dark-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
         </div>
       ))}
-    </div>
+      </div>
+
+      <div id="gallery-hidden" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6 hidden">
+        {hiddenImages.map((image) => (
+          <div class="group relative aspect-[9/16] rounded-2xl overflow-hidden bg-dark-800 border border-dashed border-dark-600 hover:border-primary-500/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary-500/10">
+          <img
+            src={image.src}
+            alt={image.alt}
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-dark-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        </div>
+      ))}
+      </div>
     </div>
     
-    <div class="text-center mt-12">
-      
+    <div class="flex justify-end mt-8">
+      <button id="gallery-toggle" class="group inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-primary-400 border border-dashed border-primary-500/30 rounded-full hover:bg-primary-500/10 hover:border-primary-500/60 transition-all duration-300 cursor-pointer">
+        <span id="gallery-toggle-text">Ver más</span>
+        <svg id="gallery-arrow" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
     </div>
   </div>
 </section>
+
+<script>
+  const toggle = document.getElementById('gallery-toggle');
+  const hidden = document.getElementById('gallery-hidden');
+  const text = document.getElementById('gallery-toggle-text');
+  const arrow = document.getElementById('gallery-arrow');
+  let expanded = false;
+
+  toggle.addEventListener('click', () => {
+    expanded = !expanded;
+    hidden.classList.toggle('hidden');
+    text.textContent = expanded ? 'Ver menos' : 'Ver más';
+    arrow.style.transform = expanded ? 'rotate(90deg)' : '';
+  });
+</script>
