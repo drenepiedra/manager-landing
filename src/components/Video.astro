@@ -1,0 +1,97 @@
+---
+const base = import.meta.env.BASE_URL.replace(/\/$/, '') + '/';
+---
+
+<section id="video" class="relative py-24">
+  <div class="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-px border-t border-dashed border-dark-700"></div>
+  <div class="absolute top-0 left-[12.5%] w-px h-full border-l border-dashed border-dark-800/50 hidden lg:block"></div>
+  <div class="absolute top-0 right-[12.5%] w-px h-full border-l border-dashed border-dark-800/50 hidden lg:block"></div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <div class="inline-block mb-4">
+        <span class="px-3 py-1 text-xs font-medium text-primary-400 border border-dashed border-primary-500/30 rounded-full">Video</span>
+      </div>
+      <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">
+        Mira la App en Acción
+      </h2>
+      <p class="text-lg text-dark-400 max-w-2xl mx-auto">
+        Descubre cómo funciona nuestra aplicación con este video demostrativo.
+      </p>
+    </div>
+
+    <div class="relative p-6 sm:p-8 border border-dashed border-dark-700 rounded-3xl">
+      <div class="absolute -top-1.5 left-8 w-3 h-3 bg-dark-950 border border-dashed border-primary-500/40 rounded-full"></div>
+      <div class="absolute -top-1.5 right-8 w-3 h-3 bg-dark-950 border border-dashed border-primary-500/40 rounded-full"></div>
+
+      <div id="video-wrapper" data-video-src={`${base}video.mp4`} class="group relative aspect-video rounded-2xl overflow-hidden bg-dark-800 border border-dashed border-dark-600 hover:border-primary-500/50 transition-all duration-300 hover:shadow-xl hover:shadow-primary-500/10 cursor-pointer">
+        <video id="video-player" class="absolute inset-0 w-full h-full object-cover" preload="metadata" playsinline></video>
+        <div id="video-overlay" class="absolute inset-0 flex items-center justify-center bg-dark-950/60 transition-opacity duration-300">
+          <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.08)_0%,transparent_70%)]"></div>
+          <div class="relative flex flex-col items-center gap-4">
+            <div id="video-play-btn" class="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-primary-600/20 border border-dashed border-primary-500/40 flex items-center justify-center transition-all duration-300 group-hover:bg-primary-600/30 group-hover:border-primary-500/60 group-hover:scale-110">
+              <svg id="video-icon-play" class="w-8 h-8 sm:w-10 sm:h-10 text-primary-400 ml-1" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+              <svg id="video-icon-pause" class="w-8 h-8 sm:w-10 sm:h-10 text-primary-400 hidden" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+              </svg>
+            </div>
+            <span id="video-label" class="text-sm font-medium text-dark-400 group-hover:text-primary-400 transition-colors duration-300">Reproducir video</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const wrapper = document.getElementById('video-wrapper');
+  const video = document.getElementById('video-player') as HTMLVideoElement;
+  const overlay = document.getElementById('video-overlay');
+  const playBtn = document.getElementById('video-play-btn');
+  const iconPlay = document.getElementById('video-icon-play');
+  const iconPause = document.getElementById('video-icon-pause');
+  const label = document.getElementById('video-label');
+  let playing = false;
+
+  video.src = wrapper.getAttribute('data-video-src') || '';
+
+  wrapper.addEventListener('click', () => {
+    if (!playing) {
+      video.play();
+      playing = true;
+      overlay.classList.add('opacity-0');
+      iconPlay.classList.add('hidden');
+      iconPause.classList.remove('hidden');
+      label.textContent = 'Pausar';
+    } else {
+      video.pause();
+      playing = false;
+      overlay.classList.remove('opacity-0');
+      iconPlay.classList.remove('hidden');
+      iconPause.classList.add('hidden');
+      label.textContent = 'Reproducir video';
+    }
+  });
+
+  wrapper.addEventListener('mouseenter', () => {
+    if (playing) {
+      overlay.classList.remove('opacity-0');
+    }
+  });
+
+  wrapper.addEventListener('mouseleave', () => {
+    if (playing) {
+      overlay.classList.add('opacity-0');
+    }
+  });
+
+  video.addEventListener('ended', () => {
+    playing = false;
+    overlay.classList.remove('opacity-0');
+    iconPlay.classList.remove('hidden');
+    iconPause.classList.add('hidden');
+    label.textContent = 'Reproducir video';
+  });
+</script>
